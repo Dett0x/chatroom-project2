@@ -1,4 +1,8 @@
-const socket = io(); // Connect to the Socket.IO server
+// Import the Socket.IO library
+import io from 'socket.io-client';
+
+// Connect to the Socket.IO server
+const socket = io('https://chatroom-project2.vercel.app'); // Provide the correct URL
 
 const messageInput = document.getElementById('messageInput');
 const sendButton = document.getElementById('sendButton');
